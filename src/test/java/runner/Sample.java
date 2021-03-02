@@ -8,6 +8,6 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "Features/SampleApp.feature", glue = { "page",
 		"core" }, tags = "@sampleApp")
-public class BuscaVideo {
+public class Sample {
 
 }

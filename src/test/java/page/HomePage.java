@@ -25,8 +25,7 @@ public class HomePage extends BasePage {
     private Elemento optionModel = new Elemento(getDriver(), "xpath", "//*[text()='Scooter']");
     private Elemento cylinderCapacity = new Elemento(getDriver(), "xpath", "//input[@name='Cylinder Capacity']");
     private Elemento enginePerformance = new Elemento(getDriver(), "xpath", "//input[@name='[kW]']");
-    private Elemento openDateCalender = new Elemento(getDriver(), "xpath", "//button[@id='opendateofmanufacturecalender']");
-    private Elemento optionDateCalender = new Elemento(getDriver(), "xpath", "//*[text()='15']");
+    private Elemento openDateCalender = new Elemento(getDriver(), "xpath", "//input[@name='Date of Manufacture']");
     private Elemento optionNumberOfSeats = new Elemento(getDriver(), "xpath", "//*[text()='9']");
 
     private Elemento rightHandNo = new Elemento(getDriver(), "xpath", "//*[text()='No']");
@@ -89,8 +88,7 @@ public class HomePage extends BasePage {
         clicar(optionModel);
         escrever(cylinderCapacity, "900");
         escrever(enginePerformance,"1000");
-        clicar(openDateCalender);
-        clicar(optionDateCalender);
+        escrever(openDateCalender, "03/01/2021");
         clicar(optionNumberOfSeats);
         clicar(rightHandNo);
         clicar(optionOfSeatsMotorCycle);
